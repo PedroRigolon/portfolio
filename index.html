@@ -47,7 +47,22 @@
 
         #div_about{
           margin-top: 80vh;
-          height: 50vh;
+          height: 100vh;
+        }
+
+        #foto{
+          height: 25vh;
+          border-radius: 20px;
+          
+        }
+
+        #headline_about{
+          margin-top: 3%;
+
+        }
+
+        #content_about{
+          margin-top: 15vh;
         }
           
     </style>
@@ -105,13 +120,22 @@
     <div class="container-fluid bg-dark" id="div_about">
       <div class="row text-center p-2 p-sm-3">
 
-        <div class="col-12">
+        <div class="col-12" id="headline_about">
           <h1>Olá, meu nome é Pedro!</h1>
         </div>
 
 
-        <div class="col-12">
-          
+        <div class="col-12" id="content_about">
+          <div class="about_img">
+            <img class="border border-dark-subtle" src="video-imagens/pfp.jpg" alt="Foto de perfil/apresentação" id="foto">
+          </div>
+
+          <div class="about_text mt-4">
+            <p class="fs-5 fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquid nihil quaerat, cum  repudiandae voluptatum reiciendis quidem veritatis veniam? Vel, perspiciatis id voluptates quo libero pariatur saepe odio alias itaque!</p>
+
+            <button class="btn btn-secondary mt-2">botao</button>
+          </div>
+
         </div>
 
       </div>
