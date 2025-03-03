@@ -47,7 +47,7 @@
 
         #div_about{
           margin-top: 80vh;
-          height: 100vh;
+          height: 100%;
         }
 
         #foto{
@@ -57,7 +57,7 @@
 
         #headline_about{
           
-
+justify-self: center;
         }
 
         #content_about{
@@ -66,15 +66,54 @@
         }
 
         #knowledge{
-          height: 95vh;
+          height: 100%;
   
         }
 
+
         #row2_knowledge div{
           height: 7rem;
+        }
+       
+        #knowledge picture img{
+          width: 30%;
+        }
+
+        #knowledge picture img#img_mongodb{
+          width: 60%;
+        }
+        
+        @media screen and (max-width: 370px) {
+        #knowledge picture img{
+          width: 40%;
+        }
 
         }
+
+        @media screen and (min-width: 576px) {
+         
+
+        }
+
+        @media screen and (min-width: 768px) {
+
+
+        }
+
+        @media screen and (min-width: 992px) {
+          #row2_knowledge div{
+          height: 9rem;
+        }
+        
+        }
+
+        @media screen and (min-width: 1200px) {
+
           
+          
+        }
+
+
     </style>
 </head>
 
@@ -131,8 +170,8 @@
     </header>
 
 
-    <div class="container-fluid bg-dark bg-opacity-75" id="div_about">
-      <div class="row text-center p-2 pb-0 p-sm-3">
+    <div class="container-fluid bg-dark pb-5 bg-opacity-75 " id="div_about">
+      <div class="row text-center p-2 p-sm-3">
 
         <div class="col-12 mt-5 mt-sm-5 mt-md-5 mt-xl-3 align-self-center" id="headline_about">
           <h2 class="h2">Olá, eu sou o Pedro!</h2>
@@ -157,45 +196,145 @@
     </div>
 
     <div class="container-fluid bg-dark" id="knowledge">
-      <div class="row text-center py-5">
+      <div class="row text-center py-4">
 
-        <div class="col-12">
+        <div class="col-12 mt-2">
           <h2 class="h2">Conhecimentos</h2>
         </div>
 
         <!-- Nova linha dentro da coluna de 12 -->
-        <div class="col-12">
-          <div class="row gap-4 align-items-center justify-content-center" id="row2_knowledge"> <!-- Aqui, você coloca uma 'row' dentro -->
-            <div class="col-5 col-sm-4 col-md-3 col-xl-3 col-xxl-2 bg-primary">
-              <p>obj-conhecimento</p>
+        <div class="col-12 py-5">
+          <div class="row justify-content-center align-items-center gap-3 gap-md-4 gap-lg-5" id="row2_knowledge">
+            
+            <div class="col-5 col-sm-4 col-md-3 col-xl-2 col-xxl-2 rounded bg-info bg-opacity-25">
+              <div class="d-grid justify-self-center align-self-center">
+              <p  class="fw-medium align-self-center mb-0">HMTL</p>
+
+              <picture>
+                <img   height="auto" src="video-imagens/HTML5_logo_and_wordmark.svg.png" alt="">
+              </picture>
+              </div>
             </div>
 
-            <div class="col-5 col-sm-4 col-md-3 col-xl-3 col-xxl-2 bg-primary">
-              <p>obj-conhecimento</p>
+            <div class="col-5 col-sm-4 col-md-3 col-xl-2 col-xxl-2 rounded bg-info bg-opacity-25">
+              <div class="d-grid justify-self-center align-self-center">
+              <p  class="fw-medium align-self-center mb-0">CSS</p>
+
+              <picture>
+                <img  height="auto" src="video-imagens/CSS3_logo_and_wordmark.svg.png" alt="">
+              </picture>
+              </div>
             </div>
 
-            <div class="col-5 col-sm-4 col-md-3 col-xl-3 col-xxl-2 bg-primary">
-              <p>obj-conhecimento</p>
+            <div class="col-5 col-sm-4 col-md-3 col-xl-2 col-xxl-2 rounded bg-info bg-opacity-25">
+              <div class="d-grid justify-self-center align-self-center">
+              <p  class="fw-medium align-self-center mb-0">Java Script</p>
+
+              <picture>
+                <img   height="auto" src="video-imagens/JavaScript-logo.png" alt="">
+              </picture>
+              </div>
             </div>
 
-            <div class="col-5 col-sm-4 col-md-3 col-xl-3 col-xxl-2 bg-primary">
-              <p>obj-conhecimento</p>
+            <div class="col-5 col-sm-4 col-md-3 col-xl-2 col-xxl-2 rounded bg-info bg-opacity-25">
+              <div class="d-grid justify-self-center align-self-center">
+              <p  class="fw-medium align-self-center mb-0">Bootstrap</p>
+
+              <picture>
+                <img  height="auto" src="video-imagens/Bootstrap_logo.svg.png" alt="">
+              </picture>
+              </div>
             </div>
 
-            <div class="col-5 col-sm-4 col-md-3 col-xl-3 col-xxl-2 bg-primary">
-              <p>obj-conhecimento</p>
+            <div class="col-5 col-sm-4 col-md-3 col-xl-2 col-xxl-2 rounded bg-info bg-opacity-25">
+              <div class="d-grid justify-self-center align-self-center">
+              <p  class="fw-medium align-self-center mb-0">Github</p>
+
+              <picture>
+                <img  height="auto" src="video-imagens/GitHub-Mark-ea2971cee799.png" alt="">
+              </picture>
+              </div>
             </div>
 
-            <div class="col-5 col-sm-4 col-md-3 col-xl-3 col-xxl-2 bg-primary">
-              <p>obj-conhecimento</p>
+            <div class="col-5 col-sm-4 col-md-3 col-xl-2 col-xxl-2 rounded bg-info bg-opacity-25">
+              <div class="d-grid justify-self-center align-self-center">
+              <p  class="fw-medium align-self-center mb-0">Git</p>
+
+              <picture>
+                <img  height="auto" src="video-imagens/Git_icon.svg.png" alt="">
+              </picture>
+              </div>
             </div>
 
-            <div class="col-5 col-sm-4 col-md-3 col-xl-3 col-xxl-2 bg-primary">
-              <p>obj-conhecimento</p>
+            <div class="col-5 col-sm-4 col-md-3 col-xl-2 col-xxl-2 rounded bg-info bg-opacity-25">
+              <div class="d-grid justify-self-center align-self-center">
+              <p  class="fw-medium align-self-center mb-0">NodeJs</p>
+
+              <picture>
+                <img  height="auto" src="video-imagens/Node.js_logo.svg.png" alt="">
+              </picture>
+              </div>
             </div>
 
-            <div class="col-5 col-sm-4 col-md-3 col-xl-3 col-xxl-2 bg-primary">
-              <p>obj-conhecimento</p>
+            <div class="col-5 col-sm-4 col-md-3 col-xl-2 col-xxl-2 rounded bg-info bg-opacity-25">
+              <div class="d-grid justify-self-center align-self-center">
+              <p  class="fw-medium align-self-center mb-0">MongoDB</p>
+
+              <picture>
+                <img  height="auto" src="video-imagens/MongoDB_Logo.svg.png" alt="" id="img_mongodb">
+              </picture>
+              </div>
+            </div>
+
+            <div class=" col-5 col-sm-4 col-md-3 col-xl-2 col-xxl-2 rounded bg-info bg-opacity-25">
+              <div class="d-grid justify-self-center align-self-center">
+                <p  class="fw-medium align-self-center mb-0">R</p>
+
+                <picture>
+                  <img  height="auto" src="video-imagens/R_logo.svg.png" alt="">
+                </picture>
+
+              </div>
+            </div>
+
+            <div class="col-5 col-sm-4 col-md-3 col-xl-2 col-xxl-2 rounded bg-info bg-opacity-25">
+               <div class="d-grid justify-self-center align-self-center">
+              <p  class="fw-medium align-self-center mb-0">Photoshop</p>
+
+              <picture>
+                <img  height="auto" src="video-imagens/Adobe_Photoshop_CC_icon.svg.png" alt="">
+              </picture>
+              </div>
+            </div>
+
+            <div class="col-5 col-sm-4 col-md-3 col-xl-2 col-xxl-2 rounded bg-info bg-opacity-25">
+              <div class="d-grid justify-self-center align-self-center">
+              <p  class="fw-medium align-self-center mb-0">Paint.net</p>
+
+              <picture>
+                <img  height="auto" src="video-imagens/2128238399_paintneticon(6).png.4b20725c1c9d337627a3a03c9ae7adec.png" alt="">
+              </picture             ></div>
+
+            </div>
+
+            <div class="col-5 col-sm-4 col-md-3 col-xl-2 col-xxl-2 rounded bg-info bg-opacity-25">
+              <div class="d-grid justify-self-center align-self-center">
+              <p  class="fw-medium align-self-center mb-0">Gimp</p>
+
+              <picture>
+                <img  height="auto" src="video-imagens/png-transparent-gimp-logo-large.png" alt="">
+              </picture>
+              </div>
+            </div>
+
+            <div class="col-5 col-sm-4 col-md-3 col-xl-2 col-xxl-2 rounded bg-info bg-opacity-25">
+              <div class="d-grid justify-self-center align-self-center">
+              <p  class="fw-medium align-self-center mb-0">Sony vegas</p>
+
+              <picture>
+                <img  height="auto" src="video-imagens/sony-vegas-logo-icon.png" alt="">
+              </picture>
+              </div>
             </div>
 
 
