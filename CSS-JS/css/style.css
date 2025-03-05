@@ -61,6 +61,42 @@
 justify-self: center;
 }
 
+@keyframes brilho {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+      background-position: 100% 0;
+  }
+}
+
+span.main_headline{
+  font-weight: 700;
+    animation: 3.4s linear infinite brilho;
+    background-image: linear-gradient(45deg, #A81CC1, #5143E9, #A81CC1, #5143E9);
+    background-size: 400% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+  animation: 3.4s linear infinite brilho;
+  font-weight: 500;
+  background-image: linear-gradient(45deg, #A81CC1, #5143E9, #A81CC1, #5143E9);
+  background-size: 400% 100%;
+  color: white;
+  border-color: #741485;
+  transition: transform 1s; /* Aplica transição apenas ao transform */
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  border-color: #5143E9;
+}
+
+
 #content_about{
   margin-top: 10vh;
   align-self:center;
