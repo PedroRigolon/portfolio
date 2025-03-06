@@ -7,6 +7,30 @@
     color: white;
 }
 
+@keyframes brilho {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+      background-position: 100% 0;
+  }
+}
+
+.btn-primary {
+  animation: 3.4s linear infinite brilho;
+  font-weight: 500;
+  background-image: linear-gradient(45deg, #A81CC1, #5143E9, #A81CC1, #5143E9);
+  background-size: 400% 100%;
+  color: white;
+  border-color: #741485;
+  transition: transform 1s; /* Aplica transição apenas ao transform */
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  border-color: #A81CC1;
+}
+
 
 /* GERAL */
 
@@ -21,11 +45,11 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -999; 
+    z-index: -3; 
 }
 
 
-.video-bg video {
+.video-bg video{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -33,8 +57,9 @@
     height: 100%;
     object-fit: cover;
     transform: translate(-50%, -50%);
-  
-  }
+    will-change: transform;
+}
+
 /* FUNDO ANIMADO */
 
 
@@ -57,18 +82,10 @@
 }
 
 #headline_about{
-  
 justify-self: center;
 }
 
-@keyframes brilho {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-      background-position: 100% 0;
-  }
-}
+
 
 span.main_headline{
   font-weight: 700;
@@ -81,20 +98,6 @@ span.main_headline{
     -webkit-text-fill-color: transparent;
 }
 
-.btn-primary {
-  animation: 3.4s linear infinite brilho;
-  font-weight: 500;
-  background-image: linear-gradient(45deg, #A81CC1, #5143E9, #A81CC1, #5143E9);
-  background-size: 400% 100%;
-  color: white;
-  border-color: #741485;
-  transition: transform 1s; /* Aplica transição apenas ao transform */
-}
-
-.btn-primary:hover {
-  transform: scale(1.05);
-  border-color: #5143E9;
-}
 
 
 #content_about{
@@ -228,13 +231,21 @@ background-image: url(/video-imagens/webp/projeto1.webp);
 background-size:cover;
 background-repeat: no-repeat;
 background-position: 100% 0;
-transition: background-position 7s ease-in-out;
+transition: background-position 5s ease-in-out;
 }
 
 .div-project:hover{
 
 background-position: 100% 100%;
 }
+
+.container-black{
+  background-color: rgba(0, 0, 0, 0.514);
+  height: 100%;
+  height: 100%; 
+  position: relative;
+}
+/* contato */
 
 #contact{
 background-image: url(/video-imagens/webp/background/starts.webp);
@@ -248,9 +259,30 @@ min-height: 100vh;
 background-color: rgba(255, 255, 255, 0.644);
 }
 
+.container-forms{
+  width: 100%; 
+  max-width: 350px;
+  min-height: 400px;
+}
 
+#result{
+  background-color: aliceblue; 
+  border-radius: 20px; 
+  margin-top: 10px; 
+  text-align: center;
+}
+
+.h-captcha{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
 
 /* RESPONSIVIDADES EXTRAS */
+
+
+
+
 @media screen and (max-width: 370px) {
 #knowledge picture img{
   width: 40%;
