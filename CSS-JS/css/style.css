@@ -1,1 +1,286 @@
-*{margin:0;padding:0;box-sizing:border-box;color:#fff}@keyframes brilho{0%{background-position:0 0}100%{background-position:100% 0}}.btn-primary{animation:3.4s linear infinite brilho;font-weight:500;background-image:linear-gradient(45deg,#A81CC1,#5143E9,#A81CC1,#5143E9);background-size:400% 100%;color:#fff;border-color:#741485;transition:transform 1s}.btn-primary:hover{transform:scale(1.05);border-color:#A81CC1}.video-bg{position:fixed;top:0;left:0;width:100%;height:100%;overflow:hidden;z-index:-3}.video-bg video{position:absolute;top:50%;left:50%;width:100%;height:100%;object-fit:cover;transform:translate(-50%,-50%);will-change:transform}#div_about{margin-top:80vh;min-height:100vh}#row_about{margin-bottom:2.2rem}#foto{border-radius:20px}#headline_about{justify-self:center}span.main_headline{font-weight:700;animation:3.4s linear infinite brilho;background-image:linear-gradient(45deg,#A81CC1,#5143E9,#A81CC1,#5143E9);background-size:400% 100%;background-clip:text;-webkit-background-clip:text;color:transparent!important;-webkit-text-fill-color:#fff0}#content_about{margin-top:10vh;align-self:center}#knowledge{min-height:100vh}#row2_knowledge div{height:7rem}#knowledge picture img{width:30%}#knowledge picture img#img_mongodb{width:60%}#certificates{background-image:url(/video-imagens/webp/background/bg-galaxia.webp);background-repeat:none;background-position:center;background-size:cover;background-attachment:fixed;min-height:100vh}.swiper{min-height:70vh;display:grid;justify-content:center;align-items:center;border-radius:15px}.swiper-slide{text-align:center;font-size:18px;background:#ffffff28;display:flex;justify-content:center;align-items:center}.swiper-slide img{display:block;width:50%;object-fit:cover}.swiper-button-next,.swiper-button-prev{color:white!important}.swiper-pagination-bullet{background-color:white!important}.swiper-pagination-bullet-active{background-color:white!important}.slide-custom{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:3.5rem}.carousel-img{justify-self:center;align-self:center;background-color:#fff;padding:5%}.btn-custom1{background-color:#215188;color:#fff;border-color:#215188}.btn-custom2{background-color:#fff;color:#141464;font-weight:500;border-color:#fff}.btn-custom3{background-color:#fff;color:#f00000;font-weight:500;border-color:#fff}#projects{min-height:100vh}.div-project{height:300px;background-image:url(/video-imagens/webp/projeto1.webp);background-size:cover;background-repeat:no-repeat;background-position:100% 0;transition:background-position 5s ease-in-out}.div-project:hover{background-position:100% 100%}.container-black{background-color:rgb(0 0 0 / .514);height:100%;height:100%;position:relative}#contact{background-image:url(/video-imagens/webp/background/starts.webp);background-repeat:no-repeat;background-attachment:fixed;background-size:cover;min-height:100vh}.contact-full{background-color:rgb(255 255 255 / .644)}.container-forms{width:100%;max-width:350px;min-height:400px}#result{background-color:aliceblue;border-radius:20px;margin-top:10px;text-align:center}.h-captcha{display:grid;justify-content:center;align-items:center}@media screen and (max-width:370px){#knowledge picture img{width:40%}}@media screen and (min-width:992px){#row2_knowledge div{height:9rem}.swiper-slide img{width:40%}}
+/* GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+/* GERAL */
+
+
+/* SOBRE */   
+
+ /* FUNDO ANIMADO */
+ .video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -999; 
+}
+
+
+.video-bg video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+  
+  }
+/* FUNDO ANIMADO */
+
+
+
+
+#div_about{
+  margin-top: 80vh;
+  min-height: 100vh;
+  
+}
+
+#row_about{
+  margin-bottom: 2.2rem;
+
+}
+
+#foto{
+  border-radius: 20px;
+  
+}
+
+#headline_about{
+  
+justify-self: center;
+}
+
+@keyframes brilho {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+      background-position: 100% 0;
+  }
+}
+
+span.main_headline{
+  font-weight: 700;
+    animation: 3.4s linear infinite brilho;
+    background-image: linear-gradient(45deg, #A81CC1, #5143E9, #A81CC1, #5143E9);
+    background-size: 400% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+  animation: 3.4s linear infinite brilho;
+  font-weight: 500;
+  background-image: linear-gradient(45deg, #A81CC1, #5143E9, #A81CC1, #5143E9);
+  background-size: 400% 100%;
+  color: white;
+  border-color: #741485;
+  transition: transform 1s; /* Aplica transição apenas ao transform */
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  border-color: #5143E9;
+}
+
+
+#content_about{
+  margin-top: 10vh;
+  align-self:center;
+}
+
+/*fim do SOBRE */
+
+
+
+/* DIV CONHECIMENTOS */    
+#knowledge{
+  min-height: 100vh;
+
+}
+
+
+#row2_knowledge div{
+  height: 7rem;
+}
+
+#knowledge picture img{
+  width: 30%;
+}
+
+#knowledge picture img#img_mongodb{
+  width: 60%;
+}
+/* fim da DIV CONHECIMENTOS */  
+
+
+
+/* CARROSEL SWIPER */  
+
+#certificates{
+  background-image: url(/video-imagens/webp/background/bg-galaxia.webp);
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+
+
+.swiper {
+  min-height: 70vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #ffffff28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 50%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white !important; /* Define a cor dos botões como branco */
+}
+
+.swiper-pagination-bullet {
+    background-color: white !important; /* Bolinhas inativas */
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white !important; /* Bolinha ativa */
+}
+
+.slide-custom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;      
+  gap: 3.5rem;  
+
+
+}
+
+.carousel-img{
+  justify-self: center;
+  align-self: center;
+  background-color: white;
+  padding: 5%;
+}
+
+.btn-custom1{
+  background-color: rgb(33, 81, 136);
+  color: white;
+  border-color: rgb(33, 81, 136);
+}
+
+.btn-custom2{
+  background-color: white;
+  color: rgb(20, 20, 100);
+  font-weight: 500;
+  border-color: white;
+}
+
+.btn-custom3{
+  background-color: white;
+  color: rgb(240, 0, 0);
+  font-weight: 500;
+  border-color: white;
+}
+/*fim do CARROSEL SWIPER */  
+
+/* PROJETOS */
+
+#projects{
+min-height: 100vh;
+}
+
+
+.div-project{
+height: 300px;
+background-image: url(/video-imagens/webp/projeto1.webp);
+background-size:cover;
+background-repeat: no-repeat;
+background-position: 100% 0;
+transition: background-position 7s ease-in-out;
+}
+
+.div-project:hover{
+
+background-position: 100% 100%;
+}
+
+#contact{
+background-image: url(/video-imagens/webp/background/starts.webp);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+min-height: 100vh;
+}
+
+.contact-full{
+background-color: rgba(255, 255, 255, 0.644);
+}
+
+
+
+/* RESPONSIVIDADES EXTRAS */
+@media screen and (max-width: 370px) {
+#knowledge picture img{
+  width: 40%;
+}
+
+}
+
+@media screen and (min-width: 576px) {
+  
+
+}
+
+@media screen and (min-width: 768px) {
+  
+
+}
+
+@media screen and (min-width: 992px) {
+  #row2_knowledge div{
+  height: 9rem;
+}
+.swiper-slide img {
+  width: 40%;
+
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  
+  
+}
