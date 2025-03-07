@@ -312,22 +312,24 @@
           <div class="container-forms bg-white bg-opacity-75 p-4 rounded shadow text-dark">
             <h4 class="text-center fw-bold text-dark">Entre em contato!</h4>
             <form action="https://api.web3forms.com/submit" method="POST" id="form" data-success="Sua mensagem foi enviada com sucesso!" class="mt-3">
+              <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
               <input type="hidden" name="access_key" value="01378378-78af-48c3-aea3-830d5a7284f8">
               <input type="hidden" name="from_name" value="Email recebido!">
+              <input type="hidden" name="subject" value="Nova mensagem recebida do site portfolio." />
+
 
               <div class="mb-3">
                 <label for="email" class="form-label fw-medium text-dark">Email</label>
                 <input type="email" name="email" class="form-control" id="email" placeholder="Digite seu email">
               </div>
+
               <div class="mb-3">
                 <label for="message" class="form-label fw-medium text-dark">Mensagem</label>
                 <textarea class="form-control" name="message" placeholder="Digite sua mensagem" id="message" rows="4" style="resize: none;"></textarea>
               </div>
-              <div class="h-captcha" data-size="compact" data-captcha="true"></div>
 
               <button type="submit" class="btn btn-primary w-100 mt-3">Enviar</button>
 
-              
             </form>
             <div id="result"></div>
           </div>
@@ -359,11 +361,24 @@
 <!-- web3forms -->
 <script src="https://pedrorigolon.github.io/portfolio/CSS-JS-HTML/js/web3forms.js" async defer></script>
 
-<script src="https://web3forms.com/client/script.js" async defer></script>
-
-<!-- web3forms -->
+<!-- script botao direito -->
 
 <script src="https://pedrorigolon.github.io/portfolio/CSS-JS-HTML/js/botaoDireito.js"></script>
+
+<!-- Recaptcha v3 -->
+
+<script src="https://www.google.com/recaptcha/api.js?render=6LcgTOwqAAAAAD235oruOvbodn8cbAJvHPZAyiCG"></script>
+<script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute('6LcgTOwqAAAAAD235oruOvbodn8cbAJvHPZAyiCG', {
+                action: 'contact'
+            })
+            .then(function (token) {
+                recaptchaResponse.value = token;
+            });
+    });
+    
+</script>
 
 </body>
 </html>
