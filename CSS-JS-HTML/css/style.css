@@ -36,9 +36,9 @@ body{
   border-color: #A81CC1;
 }
 
-
-/* GERAL */
-
+.shadow-box{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
+}
 
 /* SOBRE */   
 
@@ -66,7 +66,6 @@ justify-self: center;
 }
 
 
-
 span.main_headline{
   font-weight: 700;
     animation: 3.4s linear infinite brilho;
@@ -80,15 +79,10 @@ span.main_headline{
 }
 
 
-
 #content_about{
   margin-top: 10vh;
   align-self:center;
 }
-
-/*fim do SOBRE */
-
-
 
 /* DIV CONHECIMENTOS */    
 #knowledge{
@@ -108,9 +102,6 @@ span.main_headline{
 #knowledge picture img#img_mongodb{
   width: 60%;
 }
-/* fim da DIV CONHECIMENTOS */  
-
-
 
 /* CARROSEL SWIPER */  
 
@@ -204,7 +195,6 @@ span.main_headline{
   font-weight: 500;
   border-color: white;
 }
-/*fim do CARROSEL SWIPER */  
 
 /* PROJETOS */
 
@@ -278,16 +268,6 @@ background-color: rgba(255, 255, 255, 0.644);
 
 }
 
-@media screen and (min-width: 576px) {
-  
-
-}
-
-@media screen and (min-width: 768px) {
-  
-
-}
-
 @media screen and (min-width: 992px) {
   #row2_knowledge div{
   height: 9rem;
@@ -295,12 +275,4 @@ background-color: rgba(255, 255, 255, 0.644);
 .swiper-slide img {
   width: 40%;
 
-}
-
-}
-
-@media screen and (min-width: 1200px) {
-
-  
-  
 }
