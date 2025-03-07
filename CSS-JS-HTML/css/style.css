@@ -52,6 +52,10 @@ body{
   
 }
 
+.g-recaptcha {
+   /* Reduz o tamanho para 80% */
+  transform-origin: 0 0; /* Mantém o alinhamento correto */
+}
 
 /* SOBRE */   
 
@@ -275,11 +279,19 @@ background-color: rgba(255, 255, 255, 0.644);
 
 
 @media screen and (max-width: 370px) {
-#knowledge picture img{
-  width: 40%;
-}
+    #knowledge picture img{
+      width: 40%;
+    }
 
 }
+
+@media screen and (max-width: 420px) {
+    .g-recaptcha {
+      transform: scale(0.72);
+     
+    }
+    
+  }
 
 @media screen and (min-width: 992px) {
   #row2_knowledge div{
