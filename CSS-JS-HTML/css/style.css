@@ -16,12 +16,9 @@ body{
 }
 
 @keyframes brilho {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-      background-position: 100% 0;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .btn-primary {
@@ -79,6 +76,7 @@ span.main_headline{
     -webkit-background-clip: text;
     color: transparent !important;
     -webkit-text-fill-color: transparent;
+    will-change: background-position;
 }
 
 
