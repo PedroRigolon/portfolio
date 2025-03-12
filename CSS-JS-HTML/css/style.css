@@ -28,13 +28,19 @@ body{
   background-image: linear-gradient(45deg, #A81CC1, #5143E9, #A81CC1, #5143E9);
   background-size: 400% 100%;
   color: white;
-  border-color: #741485;
-  transition: transform 1s; /* Aplica transição apenas ao transform */
+  border: none;
+  transition: transform 0.5s; /* Aplica transição apenas ao transform */
 }
 
 .btn-primary:hover {
   transform: scale(1.05);
-  border-color: #A81CC1;
+  border: none;
+  
+}
+
+.btn-primary:active{
+  background-image: linear-gradient(45deg, #6c137c, #2f2788, #6c137c, #2f2788);
+  color: rgb(151, 151, 151);
 }
 
 .shadow-box{
@@ -50,6 +56,11 @@ body{
   border-radius: 30px;
   text-align: center;
   
+}
+
+.p-about{
+  text-align: justify;
+
 }
 
 
@@ -94,8 +105,14 @@ span.main_headline{
 
 #content_about{
   margin-top: 10vh;
-  align-self:center;
+  
 }
+
+.btn-about{
+  width: 100%;
+
+}
+
 
 /* DIV CONHECIMENTOS */    
 #knowledge{
@@ -306,4 +323,6 @@ background-color: rgba(255, 255, 255, 0.644);
   width: 40%;
 
 }
+
+
 }

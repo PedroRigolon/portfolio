@@ -14,13 +14,26 @@ async function handleSubmit(event) {
     }).then(response => {
         if (response.ok) {
             status.innerHTML = "Mensagem enviada!";
+            status.classList.remove("alert-danger");  
+            status.classList.add("alert-success");  
+
+            status.classList.remove("fw-bolder");
+            status.classList.add("fw-normal");
+
             status.classList.remove("hidden");  
             status.classList.add("visible");    
+            
             form.reset();
 
             setTimeout(() => {
-                status.classList.remove("visible");
+                status.classList.remove("visible");  
                 status.classList.add("hidden");
+
+                status.classList.remove("alert-success");  
+            status.classList.add("alert-danger");  
+
+            status.classList.remove("fw-normal");
+            status.classList.add("fw-bolder");
             }, 5000);
 
         } else {
@@ -32,12 +45,22 @@ async function handleSubmit(event) {
                 }
                 status.classList.remove("hidden");
                 status.classList.add("visible");
+
+                setTimeout(() => {
+                    status.classList.remove("visible");  
+                    status.classList.add("hidden");
+                }, 5000);
             })
         }
     }).catch(error => {
         status.innerHTML = "Ocorreu um erro ao enviar a mensagem!";
         status.classList.remove("hidden");
         status.classList.add("visible");
+
+        setTimeout(() => {
+            status.classList.remove("visible");  
+            status.classList.add("hidden");
+        }, 5000);
     });
 }
 
