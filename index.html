@@ -65,11 +65,11 @@
 
         <div class="col-12 d-flex flex-column flex-lg-row align-items-center justify-content-center gap-5" id="content_about">
 
-          <div class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3 div-foto">
             <img class="border border-dark-subtle img-fluid " src="video-imagens/webp/pfp.webp" alt="Foto de perfil/apresentação" id="foto">
           </div>
 
-          <div class="d-flex flex-column col-12 col-md-10 col-lg-7  about_text align-items-center my-4">
+          <div class="about_text d-flex align-items-center flex-column col-12 col-md-10 col-lg-7 my-4">
             <p class="fw-light fs-5 fs-md-1 col-12 col-sm-12 p-about">Sou estudante de <span style="background-color: rgba(245, 245, 245, 0.144);">Ciência da Computação no Instituto Mauá de Tecnologia</span>, atualmente no segundo ano. Sempre fui fascinado pelo desenvolvimento front-end, transformando ideias em interfaces dinâmicas e intuitivas.
 
               Uma das minhas grandes conquistas foi ter sido aprovado nos vestibulares das universidades Mauá e São Judas, o que reforçou ainda mais minha vontade de seguir na área. Desde então, venho me aprofundando em <span style="background-color: rgba(245, 245, 245, 0.144);">HTML, CSS, JavaScript e bibliotecas modernas</span> para criar experiências digitais bem estruturadas e funcionais.
@@ -238,7 +238,17 @@
               </div>
             </div>
 
+            <div class="shadow-box col-5 col-sm-4 col-md-3 col-xl-2 rounded bg-info bg-opacity-25">
+              <div class="d-grid justify-self-center align-self-center">
+              <p  class="fw-medium align-self-center mb-0">GSAP</p>
 
+              <picture>
+                <img  height="auto" src="video-imagens/webp/logos/GSAP_2023.svg" alt="Gsap logo">
+              </picture>
+              </div>
+            </div>
+
+            
           </div>
         </div>
 
@@ -367,9 +377,12 @@
 
 <!-- script botao direito -->
 
-<script src="CSS-JS-HTML/js/botaoDireito.js" async defer></script>
+<script src="CSS-JS-HTML/js/script.js" async defer></script>
 
+<!-- gsap -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 
 </body>
 </html>
