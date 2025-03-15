@@ -35,27 +35,16 @@ gsap.to("#headline_about", {
 
 })
 
-gsap.from(".div-foto", {
-  y: -150,
+gsap.from([".div-foto", ".about_text"], {
   opacity: 0,
   duration: 1,
+  x: (index, target) => target.classList.contains("about_text") ? 100 : 0,
+  y: (index, target) => target.classList.contains("div-foto") ? -150 : 0,
   scrollTrigger: {
-    trigger: ".div-foto", 
-    start: "top 70%", 
-    end: "bottom 20%", 
-    toggleActions: "play none pause none", 
-  }
-});
-
-gsap.from(".about_text", {
-  x: 100,
-  opacity: 0,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".about_text", 
-    start: "top 70%", 
-    end: "bottom 25%", 
-    toggleActions: "play none pause none", 
+    trigger: ".div-foto",
+    start: "top 70%",
+    end: "bottom 20%",
+    toggleActions: "play none pause none",
   }
 });
 
