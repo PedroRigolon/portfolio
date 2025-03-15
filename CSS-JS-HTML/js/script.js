@@ -37,7 +37,7 @@ gsap.to("#headline_about", {
 
 gsap.from([".div-foto", ".about_text"], {
   opacity: 0,
-  duration: 1,
+  duration: 2.3,
   x: (index, target) => target.classList.contains("about_text") ? 100 : 0,
   y: (index, target) => target.classList.contains("div-foto") ? -150 : 0,
   scrollTrigger: {
