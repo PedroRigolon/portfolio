@@ -7,19 +7,8 @@ document.addEventListener("contextmenu", function(event) {
     event.preventDefault(); 
   });
 
-  document.querySelectorAll('.open-modal').forEach(button => {
-    button.addEventListener('click', function() {
-        const imageUrl = this.getAttribute('href');
-        document.getElementById('modalImage').setAttribute('src', imageUrl); 
-    });
-});
 
-
-// 
-// 
 // scrips do gsap (animacao)
-
-
 
 // section about
 gsap.to("#headline_about", {
