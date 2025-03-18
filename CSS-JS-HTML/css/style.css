@@ -14,6 +14,7 @@ body{
   background-size: cover;
   background-attachment: fixed;
   background-color: black;
+  overflow-x: hidden; /* Previne scroll horizontal */
 }
 
 @keyframes brilho {
@@ -71,7 +72,7 @@ body{
 #div_about{
   margin-top: 80vh;
   min-height: 100vh;
-  
+  overflow-x: hidden; /* Previne scroll horizontal */
 }
 
 #row_about{
@@ -113,10 +114,12 @@ span.main_headline{
 }
 
 
+
 /* DIV CONHECIMENTOS */    
 #knowledge{
   min-height: 100vh;
-
+  border-radius: 5%;
+  
 }
 
 
@@ -125,7 +128,7 @@ span.main_headline{
 }
 
 #knowledge picture img{
-  width: 30%;
+  width: 23%;
 }
 
 #knowledge picture img#img_mongodb{
