@@ -253,6 +253,11 @@ transition: background-position 5s ease-in-out;
 
 }
 
+.div-project3{
+  background-image: url(../../video-imagens/projeto-3.png);
+
+}
+
 .div-project:hover{
 
 background-position: 100% 100%;
