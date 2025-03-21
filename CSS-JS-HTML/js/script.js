@@ -1,7 +1,3 @@
-// ativar plugin scrollTrigger
-gsap.registerPlugin(ScrollTrigger);
-
-
 // impedir botao direito
 document.addEventListener("contextmenu", function(event) {
     event.preventDefault(); 
@@ -9,6 +5,11 @@ document.addEventListener("contextmenu", function(event) {
 
 
 // scrips do gsap (animacao)
+
+// ativar plugin scrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
+
 
 // section about
 gsap.to("#headline_about", {

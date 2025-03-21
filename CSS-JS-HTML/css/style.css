@@ -7,6 +7,11 @@
     color: white;
 }
 
+html{
+  scroll-padding-top: 3rem;
+  scroll-behavior: smooth;
+}
+
 body{
   background-image: url(https://pedrorigolon.github.io/portfolio/video-imagens/webp/background/bg-outerwilds.webp);
   background-position: center;
@@ -61,6 +66,14 @@ body{
 .p-about{
   text-align: justify;
 
+}
+
+#certificates, #knowledge{
+  background-image: url(https://pedrorigolon.github.io/portfolio/video-imagens/webp/background/bg-galaxia.webp);
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 
@@ -118,8 +131,6 @@ span.main_headline{
 /* DIV CONHECIMENTOS */    
 #knowledge{
   min-height: 100vh;
-  border-radius: 5%;
-  
 }
 
 
@@ -137,12 +148,9 @@ span.main_headline{
 
 /* CARROSEL SWIPER */  
 
+
+
 #certificates{
-  background-image: url(https://pedrorigolon.github.io/portfolio/video-imagens/webp/background/bg-galaxia.webp);
-  background-repeat: none;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   min-height: 100vh;
 }
 
